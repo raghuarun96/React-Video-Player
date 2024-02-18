@@ -1,0 +1,121 @@
+.container {
+    width : 500px;
+    height : 500px ; 
+    margin: 50px auto;
+}
+.toggle-container{
+ padding:10px 0;
+}
+/* Container */
+.toggle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px 0;
+  }
+  .flex-container {
+    display:flex;
+    align-items: center;
+    width:100%
+  }
+  .timer-progress {
+    width:100%;
+  }
+  /* Button */
+  .toggle-container button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-right:10px ;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .toggle-container button:hover {
+    background-color: #267bb6;
+  }
+  
+  /* Input Range */
+  .toggle-container input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  /* Time Display */
+  .toggle-container p {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #555;
+    margin-right:10px;
+  }
+  
+  /* Select Dropdown */
+  .toggle-container select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  /* Optional: Style select dropdown arrow */
+  .toggle-container select::-ms-expand {
+    display: none;
+  }
+  
+  .toggle-container select::after {
+    content: "\25BC"; /* Unicode character for down arrow */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  /* Optional: Hover effect on select */
+  .toggle-container select:hover {
+    border-color: #3498db;
+  }
+
+  /* Playlist css*/
+  .playlist li {
+ padding:10px 10px 10px 0;
+  }
+
+  /* Playlist.css */
+.playlist {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .playlist ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .playlist li {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-bottom: 5px;
+    cursor: grab;
+  }
+  
+  .playlist li:active {
+    cursor: grabbing;
+  }
+  
+  .playlist li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  
+  
