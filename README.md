@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+###Project Details and Report . 
+
+VideoPlayer:
+
+VideoPlayer.js: Contains the video player component with functionalities such as Play/Pause toggle, Seek functionality, Timer, Autoplay, and Speed selector.
+Playlist:
+
+Playlist.js: Manages the playlist component, where you can list the videos. If needed, you can also create PlaylistItem.js to represent each item in the playlist.
+Context:
+
+
+VideoContext:
+VideoContext.js: Manages the state and provides context for the video-related functionalities such as current video index, isPlaying, currentTime, duration, playbackSpeed, etc.
+
+App.js:
+App.js: The main component that wraps the entire application, providing the context to child components.
+Additional Notes:
+
+The project uses React context to manage the state and pass down the necessary information to the components.
+I have used CSS3 and Material UI Icons for styling the components.
+Autoplay functionality can be implemented using the autoPlay attribute in the VideoPlayer.js component.
+For speed selection, you can provide a dropdown or button to adjust playback speed, and update it using the setPlaybackSpeed function in the context.
+Remember to handle the implementation details, like integrating a video player library or directly using HTML5 <video> tag, setting up event listeners for time updates, and connecting everything through the VideoContext.
